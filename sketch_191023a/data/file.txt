@@ -1,0 +1,8 @@
+set i=4
+
+:loop
+set /a j=%i%-1
+move img_%i%.png block_%j%.png
+set /a i+=1
+if not %i% == 8 goto loop 
+pause
